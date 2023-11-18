@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <style>
+
+#myHeading
+{
+color: white;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: all 200ms ease-in-out;}
+
+#myHeading.fire
+{
+  color: black;
+background: linear-gradient(to right, rgb(252, 74, 26), rgb(247, 183, 51));
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 16pt;
+padding: 1em; 
+transition: all 200ms ease-in-out;
+border: none;
+border-radius: 20px;
+text-align:center;
+max-width: 800px;
+margin: 0 auto;}
+
+#myHeading.earth
+{background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: all 200ms ease-in-out;
+color: white;
+border: none;
+font-size: 16pt;
+padding: 1em;
+border-radius: 20px;
+text-align:center;
+max-width: 800px;
+margin: 0 auto;
+}
+
+#myHeading.water{
+  background: linear-gradient(89deg, rgb(21, 74, 189) 0.1%, rgb(26, 138, 211) 51.5%, rgb(72, 177, 234) 100.2%);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: all 200ms ease-in-out;
+border: none;
+border-radius: 20px;
+font-size: 16pt;
+padding: 1em;
+text-align:center;
+max-width: 800px;
+margin: 0 auto;
+}
+
+#myHeading.air{
+background: linear-gradient(99.6deg, rgb(112, 128, 152) 10.6%, rgb(242, 227, 234) 32.9%, rgb(234, 202, 213) 52.7%, rgb(220, 227, 239) 72.8%, rgb(185, 205, 227) 81.1%, rgb(154, 180, 212) 102.4%);
+color: black;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: all 200ms ease-in-out;
+border:none;
+font-size: 16pt;
+padding: 1em;
+border-radius: 20px;
+text-align:center;
+max-width: 800px;
+margin: 0 auto;
+}
+
+
+h2
+{color: white;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-weight: normal;
+transition: all 200ms ease-in-out;}
+
+h3
+{
+color: white;
+font-weight: normal;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+transition: all 200ms ease-in-out;}
+
+ul{color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 80px;
+list-style: none;
+margin: 0;
+border: 0;}
+
+hr
+{max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+body{
+background: black;
+max-width: 100%;
+text-align: center;}
+
+p{font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size:14px;
+font-weight:normal;
+color:#824BAD;
+padding: 20px;
+text-align: center;} 
+
+button:hover 
+{background: white;
+color: #824BAD;
+cursor: pointer;
+}
+
+
+img
+{display: block;
+margin: 0 auto;
+size: 300px}
+ 
+button {
+color: white;
+background: #824BAD;
+padding: 20px;
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size: 16px;
+border: none;
+box-shadow: 2px 2px 2px white;
+border-radius: 50%;
+transition: all 200ms ease-in-out;
+}
+
+.earth
+{border: 1px solid #B07C2A;}
+
+.air
+{border: 1px solid #D7F9FA;}
+
+.water
+{border: 1px solid #4DB7EA;}
+
+.fire
+{border: 1px solid #F19738;}
+
+.emoji1:hover
+{font-size:80px;
+cursor:zoom-in;}
+.emoji2:hover
+{font-size:80px;
+cursor:zoom-in;}
+.emoji3:hover
+{font-size:80px;
+cursor:zoom-in;}
+.emoji4:hover
+{font-size:80px;
+cursor:zoom-in;}
+
+.container
+{
+margin: 10px 20px;
+text-align: center;
+position: relative;
+height: 1572px;}
+
+a
+{color:#824BAD;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+li
+{margin: 0 120px;
+border-radius: 10px; }
+
+
+  </style>
+  <body>
+    <div class="container">  
+    <h1 id="myHeading">Be in your <em>element.</em></h1>
+    <hr>
+    <h2>
+      earth <div class="emoji1">🍂</div> air<div class="emoji2"> 💨 </div>fire <div class="emoji3">🔥</div> water <div class= emoji4>💧</div>
+      <br />
+    </h2>
+    
+<img src= "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/088/215/original/Elements_pic.png?1688483327"> </img> 
+     
+<h3>What is yours? To find out, select your Zodiac below.</h3>
+
+<ul>
+      <li><button id="cap">Capricorn ♑️</button> <span class="earth"> December 22-January 19.</span>   </li>
+      <li><button id="aqu">Aquarius ♒️ </button> <span class="air">January 20-February 18.</span> </li>
+      <li><button id="pis">Pisces ♓️</button> <span class="water"> February 19-March 20.</span> </li>
+   <li>     <button id ="ari">Aries ♈️</button> <span class="fire"> March 21-April 19.</span>  </li>
+   <li>     <button id="tau">Taurus ♉️</button> <span class="earth">April 20-May 20.</span> </li>
+   <li>     <button id="gem">Gemini ♊️</button> <span class="air"> May 21-June 20. </span> </li>
+    <li>    <button id="can">Cancer ♋️</button> <span class="water"> June 21-July 22.</span></li>
+    <li>    <button id= "leo">Leo ♌️</button> <span class="fire"> July 23-August 22. </span></li>
+    <li>    <button id = "vir">Virgo ♍️</button> <span class="earth"> August 23-September 22.</span> </li>
+     <li>   <button id="lib">Libra ♎️</button> <span class="air">September 23-October 22.</span> </li>
+     <li>   <button id= "sco">Scorpio ♏️</button> <span class="water"> October 23-November 21.</span> </li>
+    <li> <button id="sag">Sagittarius♐️</button> <span class="fire"> November 22-December 21.</span> </li>
+</ul>
+
+<br>
+ <a href="https://debrasilvermanastrology.com/the-four-elements-personality-traits" target="_blank"> Read more. </a>
+
+  <p>This page was coded by Phylly Jones.</p>
+
+<script>
+    
+    let answer= prompt("Do you know your element?");
+    if(answer=== "yes")
+{alert("That's great! Time to read more about yourself..");
+}else { 
+  alert("It's time to find out...")}
+
+
+
+      let cap = document.getElementById("cap");
+      let tau = document.getElementById("tau");
+      let vir = document.getElementById("vir");
+      let aqu = document.getElementById("aqu");
+      let gem = document.getElementById("gem");
+      let lib = document.getElementById("lib");
+      let sco = document.getElementById("sco");
+      let can = document.getElementById("can");
+      let pis = document.getElementById("pis");
+      let leo = document.getElementById("leo");
+      let ari = document.getElementById("ari");
+      let sag = document.getElementById("sag");
+let earthInfo = document.querySelector(".emoji1");
+let airInfo = document.querySelector(".emoji2");
+let fireInfo = document.querySelector(".emoji3");
+let waterInfo = document.querySelector(".emoji4");
+let h1Element= document.querySelector("h1");
+let mouseOut= document.querySelector("img");
+let originalContent= h1Element.innerHTML;
+
+      cap.addEventListener("click", earth);
+      tau.addEventListener("click", earth);
+      vir.addEventListener("click", earth);
+    aqu.addEventListener("click", air);
+     gem.addEventListener("click", air);
+      lib.addEventListener("click", air);
+sco.addEventListener("click", water);
+can.addEventListener("click", water);
+pis.addEventListener("click", water);
+leo.addEventListener("click", fire);
+ari.addEventListener("click", fire);
+sag.addEventListener("click", fire);
+earthInfo.addEventListener("mouseover", infoEarth);
+airInfo.addEventListener("mouseover", infoAir);
+fireInfo.addEventListener("mouseover", infoFire);
+waterInfo.addEventListener("mouseover", infoWater);
+mouseOut.addEventListener("mouseover", restoreH1);  
+
+
+function earth ()
+ {
+  let name = prompt("What is your name?");
+  alert(name + "," + "you are strong and steady like the EARTH! 🍂");
+}
+function air ()
+ {
+  let name = prompt("What is your name?");
+  alert(name + "," + "you are up in the AIR! 💨");
+}
+function water ()
+ {
+  let name = prompt("What is your name?");
+  alert(name + "," + "you go with the flow like WATER! 💧");
+}
+
+function fire ()
+ {
+  let name = prompt("What is your name?");
+  alert(name + "," + "you burn like FIRE! 🔥");
+}
+
+function infoEarth ()
+{
+
+    h1Element.innerHTML = ("clean, grounded, practical, disciplined, focused, organized");
+h1Element.className = "earth"
+  }
+
+function infoAir ()
+{
+
+    h1Element.innerHTML = ("curious, independent, talkative, observant, entertaining, intellectual.");
+h1Element.className = "air"
+  }
+
+function infoFire (){
+
+    h1Element.innerHTML = ("enthusiastic, impulsive, inspirational, humorous, dramatic, fun. ");
+h1Element.className = "fire"
+  }
+
+function infoWater ()
+{
+
+    h1Element.innerHTML = ("psychic, intuitive, deeply creative, empathetic, spiritual, emotional.");
+h1Element.className = "water"
+  }
+
+function restoreH1 ()
+{
+h1Element.innerHTML = originalContent;
+ h1Element.className = "";
+}
+
+  </script> 
+  </div>
+</body> 
+</html>
